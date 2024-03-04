@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care - Adopt a Pet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #65beef;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pet-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .pet-card {
+            width: 250px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #c7cfd2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .pet-card:hover {
+            transform: scale(1.05);
+        }
+
+        .pet-image {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .adopt-button {
+            background-color: #4e63a3;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .adopt-button:hover {
+            background-color: #078e46;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function movetoform(){
+            window.location.href = 'form.html';
+        }
+        
+    </script>
+</head>
+<body>
+
+<header>
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: italic;">Pet Care</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="form.html">Adopt a Pet</a>
+        <a href="#">Pets Available</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color:#0b4565 ;">Meet Our Pets</h2>
+    <div class="pet-container">
+        <div class="pet-card">
+            <img class="pet-image" onclick="movetoform()"  src="pet1.jpg" alt="Pet 1">
+            <p>Snow</p>
+            <button class="adopt-button">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <img class="pet-image" onclick="movetoform()" src="pet2.jpg" alt="Pet 2">
+            <p>Cookie</p>
+            <button class="adopt-button">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <img class="pet-image" onclick ="movetoform()" src="pet3.jpg" alt="Pet 3">
+            <p>Gingi</p>
+            <button class="adopt-button">Adopt Me</button>
+        <!-- Add more pet cards as needed -->
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Pet Care - All rights reserved</p>
+</footer>
+
+</body>
+</html>
